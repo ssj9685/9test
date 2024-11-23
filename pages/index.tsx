@@ -33,7 +33,7 @@ export default function Home() {
     }
   );
 
-  const [global, setGlobal] = useRecoilState(globalState);
+  const [global] = useRecoilState(globalState);
 
   if (isLoading) {
     return <LoadingContainer>Loading...</LoadingContainer>;
